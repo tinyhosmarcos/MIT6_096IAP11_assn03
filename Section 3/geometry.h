@@ -7,10 +7,12 @@ private:
     int x, y;
 
 public:
-    Point(int x = 0, int y = 0) : x{x}, y{y} {}
+    Point(int x = 0, int y = 0) : x(x), y(y) {}
     const int getX() const { return x; }
     const int getY() const { return y; }
     void setX(const int x) { this->x = x; }
     void setY(const int y) { this->y = y; }
-    double distance(const Point &b);
+	int get_x(){return x;}
+    int get_y(){return y;}
+	double distance(const Point &b);
 };

@@ -11,16 +11,16 @@ int main() {
     Point p1 = Point();
     Point p2 = Point(1, 2);
     
-    cout << p1 << '\n' << p2 << '\n';
+    cout<< p1.get_x()<< '\n' << p2.get_x() << '\n';
     
     p1.setX(3);
     p1.setY(4);
     
-    cout << p1 << '\n';
+    cout << p1.get_x() << '\n';
     
     p2.setX(5);
     p2.setY(6);
     
-    cout << p2 << '\n';
+    cout << p2.get_x() << '\n';
     return 0;
 }
